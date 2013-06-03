@@ -1,0 +1,42 @@
+#tri {
+  font-weight: bold;
+}
+
+#tophead {
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-weight: bold;
+	font-size: 44px;
+	text-align: center;
+	color: #9E2424;
+}
+
+#eachvid {
+	border: 2px;
+	border-radius: 24px;
+	background-color: #dddddd;
+	width: 620px;
+	border-color: black;
+	border-style: dotted;
+	position: relative;
+	left: 140px;
+}
+
+#text {
+	position: relative;
+	left: 20px;
+}
+
+#title {
+	font-weight: bold;
+}
+
+#ourfront {
+	background-image: url(images/catfur.jpg)
+}
+
+#furtype {
+	color: #58D174;
+	font-weight: bold;
+	font-family: lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size: 1.8em;
+}

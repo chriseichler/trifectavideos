@@ -1,0 +1,8 @@
+<form method='post' action="/<%= @row['genre'] %>/<%= @row['id'] %>">
+	<input type='text' name='title' value='<%= @row['title'] %>'>
+	<input type='text' name='description' value='<%= @row['description'] %>'>
+	<input type='text' name='genre' value='<%= @row['genre'] %>'>
+	<input type='text' name='url' value='<%= @row['url'] %>'>
+
+	<button>Edit Video</button>
+</form>

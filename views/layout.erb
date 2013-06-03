@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel='stylesheet' href='/bootstrap.css'>
+			<link rel='stylesheet' href='/style.css'>
+				<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+				<script src='bootstrap/js/bootstrap.js'></script>
+				<title>Trifecta Video</title>
+			</head>
+			
+			<body>
+				<a href="http://localhost:4567/"><h1 id=tophead><img src="/images/trident.png" alt="Trifecta Videos"> TRIFECTA VIDEOS</h1></a>
+				<div class='container'>
+					<div class='row'>
+						<div class="navbar navbar-inverse">
+							<!--   <%= erb '/' %> -->
+							<div class="navbar-inner">
+								<a id=stripe class="brand" href="http://localhost:4567/"><span id="tri"> Post Video</span></a>
+								<ul class="nav">
+									<li><a href="/cats">Cats</a></li>
+									<li><a href="/supernatural">Supernatural</a></li>
+									<li><a href="/nature">Nature</a></li>
+									<li><a href="/music">Music</a></li>
+									<li><a href="/comedy">Comedy</a></li>
+								</ul>
+								<div class='row'>
+									<div class='span3'>
+										<div class='btn-group'>
+											<div class="dropdown">
+												<a class='btn dropdown-toggle' data-toggle='dropdown' href='#'>
+												Other
+												<span class='caret'></span>
+												</a>
+												<ul class='dropdown-menu' role='menu'>
+													<li><a href="#"><i class='icon-camera'></i>Menu Item1</a></li>
+													<li class='divider'></li>
+													<li><a href="#">Menu Item2</a></li>
+													<li class='divider'></li>
+													<li><a href="#">Menu Item3</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>		
+						</div>
+					<%= yield %>
+					<footer class="modal-footer">
+						Made by Isabel, Chris, and Bernard.
+					</footer>
+				</div>
+			</div>
+		</body>
+	</html>

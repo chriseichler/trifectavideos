@@ -1,0 +1,21 @@
+<p></p>
+<% @rows.each do |row| %>
+<article id=eachvid>
+<!-- <form method='post' action='/genre/<%= row['id'] %>/delete'>
+			<button>Delete</button>
+</form> -->
+<div id=text>
+	<p>Title:<span id=title> <%= row['title'] %></span></p>
+	<p>Description: <%= row['description'] %></p>
+	<p>Genre: <%= row['genre'] %></p>
+	<p><%=row['url'] %></p>
+	<button id=butts><a href="/<%= row['genre'] %>/<%= row['id'] %>/edit">Edit</a></button>
+	<form id=butts method='post' action="/<%= row['genre'] %>/<%= row['id'] %>/delete">
+		<button>Delete</button>
+	</form>
+	<iframe width="560" height="315" src="http://www.youtube.com/embed/<%= row['url'].split("=").last %>
+	" frameborder="0" allowfullscreen></iframe>
+</div>
+</article>
+<p></p>
+<% end %>
